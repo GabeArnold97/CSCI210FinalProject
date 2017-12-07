@@ -1,0 +1,24 @@
+{% extends "page.html" %}
+{% block content %}
+{% for team in teamSelect %}
+<table style="margin: auto">
+    <tr>
+        <td colspan="2" style="text-align: center;"><h1>{{team.name}}</h1></td>
+    </tr>
+    <tr>
+        <td style="padding-right: 20px"><img src="../../static/{{ team.picture }}" style="border: none"  height="300" width="300"/></td>
+        <td style="padding-left: 70px;">
+            <p style="color: lightgray; font-size: 30px; font-style: oblique; font-weight: bold;">
+                <br />
+                Division: {{team.division}} <br />
+                <br />
+                Titles: {{team.titles}} <br />
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+{% endfor %}
+{% endblock %}

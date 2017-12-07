@@ -1,0 +1,24 @@
+<style>
+    a:link {color: white}
+    a:visited {color: white}
+    a:hover {color: aqua;}
+    a {text-decoration: none}
+</style>
+{% extends "base.html" %} 
+{% block teams %} 
+    <tr>
+    {% for team in teams %}
+    <td style="text-align: center; padding-top: 25px;">
+        <a href="team/{{ team.name }}">
+        <img src="static/{{ team.picture }}" style="border: none;" height="100" width="100"/><br />
+        <span style="font-size: 16pt;">{{ team.name }}</span></a>
+        </td>
+        {% if forloop.last %}
+            </tr>
+        {% else %}
+        {% if forloop.counter|divisibleby:"4" %}
+            </tr><tr>
+        {% endif %}
+        {% endif %}
+    {% endfor %} 
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "page.html" %}
+{% block content %}
+{% for division in divisionSelect %}
+<table style="margin: auto">
+    <tr>
+        <td colspan="4" style="text-align: center;"><h1>{{division.name}}</h1></td>
+    </tr>
+    <tr>
+        <td colspan="4" style="text-align: center"><img src="../../static/{{ division.picture }}" style="border: none"  height="200" width="200"/></td>
+    </tr>
+{% endfor %}
+    <tr>
+{% for teams in teamSelect %}
+        <td><a href="http://localhost:8000/team/{{ teams.name }}"><img src="../../static/{{ teams.picture }}" style="border: none"  height="100" width="100"/></td>
+{% endfor %}
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+
+{% endblock %}

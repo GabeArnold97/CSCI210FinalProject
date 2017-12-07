@@ -1,0 +1,20 @@
+username: gabe
+email: gabrielgarnold@gmail.com
+password: NFLproject
+
+Gabe:
+
+Background URL
+https://imgur.com/7gCBnx1.png
+
+NFL Logo URL
+https://imgur.com/oOdiWQS.png
+
+
+Quentin:
+
+Background URL
+http://i.imgur.com/cNCwjNH.jpg
+
+Overwatch Logo URL
+https://upload.wikimedia.org/wikipedia/en/4/44/Heroes_of_the_Storm_logo_2016.png

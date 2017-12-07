@@ -1,0 +1,51 @@
+<html>
+<head>
+<link rel="icon" href="../../static/logo.png">
+<style type="text/css">
+    #logo {display: block;
+    margin: auto;
+    width: auto;}
+    #logo_container {width: 20%; margin: auto;}
+body { background-image: url("../../static/background4.jpg"); background-repeat: repeat-y; background-position: center top; background-size: contain; background-color: black;}
+div.main { padding-left: 205px; padding-right: 205px;}
+td { vertical-align: top; }
+h1 { background-color: clear; text-align: center; font-size: 50pt; color: white; }
+</style>
+</head>
+<body>
+    <table id="logo_container">
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td colspan="2">&nbsp;
+            <a href="http://localhost:8000/"><img id="logo" src="../../static/logo.png" height="196" width="249"/></a>
+            </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><a href="/division/AFC North"><img src="../../static/afcnorth.png" style="border: none"  height="75" width="75"/></td>
+            <td><a href="/division/AFC East"><img src="../../static/afceast.png" style="border: none"  height="75" width="75"/></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><a href="/division/NFC North"><img src="../../static/nfcnorth.png" style="border: none"  height="75" width="75"/></td>
+            <td><a href="/division/NFC East"><img src="../../static/nfceast.png" style="border: none"  height="75" width="75"/></td>
+        </tr>
+        <tr>
+            <td><a href="/division/AFC South"><img src="../../static/afcsouth.png" style="border: none"  height="75" width="75"/></td>
+            <td><a href="/division/AFC West"><img src="../../static/afcwest.png" style="border: none"  height="75" width="75"/></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><a href="/division/NFC South"><img src="../../static/nfcsouth.png" style="border: none"  height="75" width="75"/></td>
+            <td><a href="/division/NFC West"><img src="../../static/nfcwest.png" style="border: none"  height="75" width="75"/></td>
+        </tr>
+    </table>
+<div class="main" id="main">
+    
+
+{% block content %}
+{% endblock %}
+
+</div>
+</body>
+</html>
